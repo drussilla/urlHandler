@@ -1,0 +1,3 @@
+Opera.Protocol\shell\open\command
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Associations\UrlAssociations
