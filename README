@@ -1,0 +1,24 @@
+==============
+1. DESCRIPTION
+==============
+This program setup us default protocol handler in registry (HKEY_CLASSES_ROOT\http\shell\open\command\@ = ""C:\code\urlHandler\urlHandler\bin\Debug\urlHandler.exe" "%1"")
+
+When user click on ulr (http://test.ru) in some application (Outlook, Skype, Word etc.), urlHandler launchs insted of default browser. It check all rule specified in config file and launch matched application. If no matched rule found it launch default application(specified in config).
+
+===============
+2. INSTALLATION
+===============
+
+If you want handle some protocols you shoud change default handler in registry.
+
+--------------
+2.1 Windows XP
+--------------
+
+Run regedit.exe and go to HKEY_CLASSES_ROOT\http\shell\open\command and change default value to "C:\code\urlHandler\urlHandler\bin\Debug\urlHandler.exe" "%1"
+
+Now when you click on link (http://test.ua) in Skype urlHandler launchs insted of your default browser.
+
+If you want manage https protocol links to you shoud change default value in HKEY_CLASSES_ROOT\https\shell\open\command key
+
+
