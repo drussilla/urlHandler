@@ -8,7 +8,8 @@ namespace urlHandler
         {
             Uri uri = new Uri(url);
             Protocol = uri.Scheme;
-            UrlWithoutProtocol = url.TrimStart((Protocol + Uri.SchemeDelimiter).ToCharArray());
+            int startIndex = Protocol.Length + Uri.SchemeDelimiter.Length;
+            UrlWithoutProtocol = url.Substring(startIndex, url.Length - startIndex);
             ProcessName = Win32ApiWrapper.GetParentProcessName();
         }
 
