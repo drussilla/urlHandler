@@ -43,6 +43,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandLineArguments.cs" />
     <Compile Include="Configuration\DefaultApplicationsSection.cs" />
     <Compile Include="Configuration\DefaultApplicationCollection.cs" />
     <Compile Include="Configuration\DefaultApplicationElement.cs" />

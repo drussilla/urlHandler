@@ -37,10 +37,11 @@ namespace urlHandler
                     return true;
                 }
 
-                if (RunDefaultApp(url))
-                {
-                    return true;
-                }
+            }
+
+            if (RunDefaultApp(url))
+            {
+                return true;
             }
 
             return false;
