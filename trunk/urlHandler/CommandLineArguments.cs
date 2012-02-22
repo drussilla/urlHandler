@@ -5,5 +5,9 @@
     /// </summary>
     public class CommandLineArguments
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        public static bool IsDebug { get; set; }
     }
 }
