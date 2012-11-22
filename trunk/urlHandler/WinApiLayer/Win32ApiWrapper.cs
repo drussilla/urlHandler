@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace urlHandler
+namespace urlHandler.WinApiLayer
 {
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct ProcessBasicInformation

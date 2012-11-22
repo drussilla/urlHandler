@@ -10,7 +10,7 @@ namespace urlHandler
             Protocol = uri.Scheme;
             int startIndex = Protocol.Length + Uri.SchemeDelimiter.Length;
             UrlWithoutProtocol = url.Substring(startIndex, url.Length - startIndex);
-            ProcessName = Win32ApiWrapper.GetParentProcessName();
+			ProcessName = DynamicProcessName.Instance.GetParentProcessName();
         }
 
         public string Protocol { get; set; }

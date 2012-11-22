@@ -1,0 +1,35 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug Linux|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DynamicProcessName.cs">
+    <Files>
+      <File FileName="Program.cs" Line="39" Column="37" />
+      <File FileName="App.config" Line="19" Column="10" />
+      <File FileName="Url.cs" Line="13" Column="1" />
+      <File FileName="UrlChecker.cs" Line="67" Column="1" />
+      <File FileName="WinApiLayer/Win32ApiWrapper.cs" Line="35" Column="50" />
+      <File FileName="Configuration/DefaultApplicationsSection.cs" Line="5" Column="5" />
+      <File FileName="Configuration/DefaultApplicationCollection.cs" Line="1" Column="1" />
+      <File FileName="DynamicProcessName.cs" Line="62" Column="6" />
+      <File FileName="urlHandler.UnixLayer/ProcessName.cs" Line="10" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="urlHandler" expanded="True" />
+          <Node name="urlHandler.Common" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="Interfaces" expanded="True" />
+          </Node>
+          <Node name="urlHandler.UnixLayer" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+          </Node>
+          <Node name="urlHandler.WinApiLayer" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -19,7 +19,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 using System;
 using System.Configuration;
-using System.Windows.Forms;
 
 namespace urlHandler
 {
@@ -29,6 +28,7 @@ namespace urlHandler
         {
             if (args.Length != 1)
             {
+				Console.WriteLine ("Wrong argument!\nUse: urlHandler.exe \"url\"");
                 return;
             }
 
@@ -38,17 +38,17 @@ namespace urlHandler
             {
                 if (!UrlChecker.CheckUrl(url))
                 {
-                    MessageBox.Show("No rule or default application for " + url);
+					Console.WriteLine("No rule or default application for " + url);                    
                 }
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
                 //Console.ReadKey();
             }
             catch (ConfigurationException ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
                 //Console.ReadKey();
             }
         }

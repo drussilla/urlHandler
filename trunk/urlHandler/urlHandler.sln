@@ -8,16 +8,52 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\..\..\..\_work\MSI-GeneratorV2\trunk\Settings.StyleCop = ..\..\..\..\_work\MSI-GeneratorV2\trunk\Settings.StyleCop
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "urlHandler.WinApiLayer", "WinApiLayer\urlHandler.WinApiLayer.csproj", "{AC158BD1-03BF-4710-8859-A6741C26CB2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "urlHandler.Common", "urlHandler.Common\urlHandler.Common.csproj", "{D7BA46EB-3182-40FF-B129-225C904C6B99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "urlHandler.UnixLayer", "urlHandler.UnixLayer\urlHandler.UnixLayer.csproj", "{C0808176-4F0B-422A-9565-EF7921485284}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug Linux|x86 = Debug Linux|x86
+		Release Linux|x86 = Release Linux|x86
+		Debug Windows|Any CPU = Debug Windows|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Debug|x86.ActiveCfg = Debug|x86
-		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Debug|x86.Build.0 = Debug|x86
-		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Release|x86.ActiveCfg = Release|x86
-		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Release|x86.Build.0 = Release|x86
+		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Debug Linux|x86.ActiveCfg = Debug Linux|x86
+		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Debug Linux|x86.Build.0 = Debug Linux|x86
+		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Debug Windows|Any CPU.ActiveCfg = Debug Windows|Any CPU
+		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Debug Windows|Any CPU.Build.0 = Debug Windows|Any CPU
+		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Release Linux|x86.ActiveCfg = Release Linux|x86
+		{1E6DB77F-7F44-4CC7-A146-F84DB204BF48}.Release Linux|x86.Build.0 = Release Linux|x86
+		{AC158BD1-03BF-4710-8859-A6741C26CB2F}.Debug Linux|x86.ActiveCfg = Debug|Any CPU
+		{AC158BD1-03BF-4710-8859-A6741C26CB2F}.Debug Windows|Any CPU.ActiveCfg = Debug Windows|Any CPU
+		{AC158BD1-03BF-4710-8859-A6741C26CB2F}.Debug Windows|Any CPU.Build.0 = Debug Windows|Any CPU
+		{AC158BD1-03BF-4710-8859-A6741C26CB2F}.Release Linux|x86.ActiveCfg = Release|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Debug Linux|x86.ActiveCfg = Debug|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Debug Linux|x86.Build.0 = Debug|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Debug Windows|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Debug Windows|Any CPU.Build.0 = Debug|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Release Linux|x86.ActiveCfg = Debug|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Release Linux|x86.Build.0 = Debug|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0808176-4F0B-422A-9565-EF7921485284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BA46EB-3182-40FF-B129-225C904C6B99}.Debug Linux|x86.ActiveCfg = Debug|Any CPU
+		{D7BA46EB-3182-40FF-B129-225C904C6B99}.Debug Linux|x86.Build.0 = Debug|Any CPU
+		{D7BA46EB-3182-40FF-B129-225C904C6B99}.Debug Windows|Any CPU.ActiveCfg = Debug Windows|Any CPU
+		{D7BA46EB-3182-40FF-B129-225C904C6B99}.Debug Windows|Any CPU.Build.0 = Debug Windows|Any CPU
+		{D7BA46EB-3182-40FF-B129-225C904C6B99}.Release Linux|x86.ActiveCfg = Release|Any CPU
+		{D7BA46EB-3182-40FF-B129-225C904C6B99}.Release Linux|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = urlHandler.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
