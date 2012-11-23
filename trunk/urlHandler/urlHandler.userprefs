@@ -1,16 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug Linux|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DynamicProcessName.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WinApiLayer/ProcessName.cs">
     <Files>
       <File FileName="Program.cs" Line="39" Column="37" />
-      <File FileName="App.config" Line="19" Column="10" />
+      <File FileName="App.config" Line="9" Column="35" />
       <File FileName="Url.cs" Line="13" Column="1" />
       <File FileName="UrlChecker.cs" Line="67" Column="1" />
       <File FileName="WinApiLayer/Win32ApiWrapper.cs" Line="35" Column="50" />
       <File FileName="Configuration/DefaultApplicationsSection.cs" Line="5" Column="5" />
       <File FileName="Configuration/DefaultApplicationCollection.cs" Line="1" Column="1" />
-      <File FileName="DynamicProcessName.cs" Line="62" Column="6" />
-      <File FileName="urlHandler.UnixLayer/ProcessName.cs" Line="10" Column="17" />
+      <File FileName="DynamicProcessName.cs" Line="53" Column="88" />
+      <File FileName="urlHandler.UnixLayer/ProcessName.cs" Line="12" Column="34" />
+      <File FileName="WinApiLayer/ProcessName.cs" Line="10" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,10 +21,12 @@
             <Node name="References" expanded="True" />
             <Node name="Interfaces" expanded="True" />
           </Node>
-          <Node name="urlHandler.UnixLayer" expanded="True" selected="True">
+          <Node name="urlHandler.UnixLayer" expanded="True">
             <Node name="References" expanded="True" />
           </Node>
-          <Node name="urlHandler.WinApiLayer" expanded="True" />
+          <Node name="urlHandler.WinApiLayer" expanded="True">
+            <Node name="ProcessName.cs" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>

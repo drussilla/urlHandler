@@ -19,6 +19,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 using System;
 using System.Configuration;
+using System.IO;
 
 namespace urlHandler
 {
@@ -26,7 +27,7 @@ namespace urlHandler
     {
         static void Main(string[] args)
         {
-            if (args.Length != 1)
+			if (args.Length != 1)
             {
 				Console.WriteLine ("Wrong argument!\nUse: urlHandler.exe \"url\"");
                 return;
