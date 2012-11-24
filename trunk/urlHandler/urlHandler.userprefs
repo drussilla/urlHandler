@@ -8,10 +8,16 @@
       <File FileName="UrlChecker.cs" Line="67" Column="1" />
       <File FileName="urlHandler.UnixLayer/ProcessName.cs" Line="58" Column="42" />
       <File FileName="WinApiLayer/ProcessName.cs" Line="10" Column="11" />
+      <File FileName="Program.cs" Line="30" Column="4" />
+      <File FileName="App.config" Line="9" Column="35" />
+      <File FileName="Url.cs" Line="13" Column="1" />
+      <File FileName="UrlChecker.cs" Line="67" Column="1" />
+      <File FileName="urlHandler.UnixLayer/ProcessName.cs" Line="58" Column="42" />
+      <File FileName="WinApiLayer/ProcessName.cs" Line="10" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
+        <State expanded="True" selected="True">
           <Node name="urlHandler" expanded="True">
             <Node name="Configuration" expanded="True" />
           </Node>
@@ -21,7 +27,6 @@
           </Node>
           <Node name="urlHandler.UnixLayer" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="ProcessName.cs" selected="True" />
           </Node>
           <Node name="urlHandler.WinApiLayer" expanded="True" />
         </State>

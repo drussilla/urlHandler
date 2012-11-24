@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="urlHandler" Language="1033" Version="0.0.2" Manufacturer="Ivan Derevyanko aka druss" UpgradeCode="eabdc56c-3c19-46d5-84db-ea993c6ca687">
+		<Package InstallerVersion="200"  Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<Media Id="1" EmbedCab="yes" Cabinet="files.cab" />
+
+		<Feature Id="ProductFeature" Title="urlHandler" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLDIR" Name="urlHandler" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLDIR">
+			<Component Id="Main">
+        <File Id="urlHandler.exe" Name="urlHandler.exe" ShortName="URLHANDL.EXE" Source="$(var.urlHandler.TargetDir)urlHandler.exe" KeyPath="yes"/>
+        <File Id="urlHandler.exe.config" Name="urlHandler.exe.config" ShortName="URLHANDL.CON" Source="$(var.urlHandler.TargetDir)urlHandler.exe.config" />
+			</Component>
+      <Component Id="Common">
+        <File Id="urlHandler.Common.dll" Name="urlHandler.Common.dll" ShortName="URLHANCO.DLL" Source="$(var.urlHandler.Common.TargetDir)urlHandler.Common.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="WinApiLayer">
+        <File Id="urlHandler.WinApiLayer.dll" Name="urlHandler.WinApiLayer.dll" ShortName="URLHANWL.DLL" Source="$(var.urlHandler.WinApiLayer.TargetDir)urlHandler.WinApiLayer.dll" KeyPath="yes" />
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

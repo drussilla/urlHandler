@@ -30,7 +30,118 @@ If you want manage https protocol links to, you should change default value in H
 Windows 7 stores protocol handling settings in another way. You can look at research\addProgid.reg and research\assotiation.reg to chenge win 7 default protocol handler.
 
 -----------------
-2.2 Kubuntu 12.10
+2.3 Kubuntu 12.10
 -----------------
 
 Go to System Settings -> Default Applications -> Web Browser and set path to urlHandler.
+
+================
+3. CONFIGURATION
+================
+
+To configure rules you should edit urlHandler.exe.config (which located in urlHandler.exe folder).
+
+NOTICE: You shoul edit only <appSettings>, <RulesSection> or <DefaultApplicationsSection> sections.
+
+-----------------------------------
+3.1 Platform specific configuration
+-----------------------------------
+
+If you use Windows, you should set Platform appSettings key to Windows.
+Example: <add key="Platform" value="Windows" />
+
+In case of using *nix (Mono) OS - set this value to Unix.
+Example: <add key="Platform" value="Unix" />
+
+-----------------------
+3.2 Rules configuration
+-----------------------
+
+Rule configuration should be added to <rules> section.
+Example(Open Internet Explorer if you, in Skype, click on url that starts with http://insite): 
+
+<RulesSection>
+    <rules>
+    <add 
+        Name="insiteWSS"
+        Protocol="http"
+        ProcessName="Skype.exe"
+        Pattern="^insite(/.*)?$"
+        Application="C:\Program Files (x86)\Internet Explorer\iexplore.exe"
+        Arguments="%1"/>
+    </rules>
+</RulesSection>
+
+Name - human readeble name of rule.
+
+Application - Full path to application that would be launched if rule matched clicked url.
+
+Arguments - Argument that will be pass to Application. %1 will be replaced with clicked url.
+
+Protocol - if value is specified and match to the clicked url protocol - move to ProcessName rule attribute check. If value is specified and not match - move to next rule in list. If value is empty - move to ProcessName rule attribute check.
+
+ProcessName - if value is not empty and match to the process name where you click on url (works only in windows) move to Pattern attribute check. if value is not empty and not match - move to the next rule in list. if value is empty move to Pattern attribute check.
+
+Pattern - if value is not empty and regular expression match clicked url - open application specified in Application, and pass clicked url to it. If value is empty and all previous checks is passed - open application. If value is not empty and regular expression is not match - move to next rule in list.
+
+-------------------------------------
+3.3 Default application configuration
+-------------------------------------
+
+If no rules are matched - open defult application (specified in DefaultApplicationsSection section) based on clicked url protocol.
+
+Example:
+<apps>
+  <add Protocol="http" Application="C:\Program Files (x86)\Opera\Opera.exe" Arguments="%1"/>
+</apps>
+
+--------------------------
+3.4 Configuration EXAMPLES
+--------------------------
+
+Open all urls that starts with http://internal-site (internal share point portal) in Internet Explorer ("SharePoint insite" rule)
+
+Open all urls on which you clicked in the Skype and which starts with https:// in Internet Explorer.
+
+All other urls open in Opera.
+
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <section name="RulesSection" type="urlHandler.Configuration.RulesSection, urlHandler"/>
+    <section name="DefaultApplicationsSection" type="urlHandler.Configuration.DefaultApplicationsSection, urlHandler"/>
+  </configSections>
+  
+  <appSettings>
+    <add key="Platform" value="Windows" />
+  </appSettings>
+  
+  <RulesSection>
+    <rules>
+    <add 
+        Name="SharePoint insite"
+        Protocol="http"
+        ProcessName=""
+        Pattern="^internal-site(/.*)?$"
+        Application="C:\Program Files (x86)\Internet Explorer\iexplore.exe"
+        Arguments="%1"/>
+      <add
+	Name=""
+	Protocol="https"
+	ProcessName="Skype.exe"
+	Pattern=""
+	Application="C:\Program Files (x86)\Internet Explorer\iexplore.exe"
+	Arguments="%1"/>
+    </rules>
+  </RulesSection>
+
+  <DefaultApplicationsSection>
+    <apps>
+      <add Protocol="http" Application="C:\Program Files (x86)\Opera\Opera.exe" Arguments="%1"/>
+      <add Protocol="https" Application="C:\Program Files (x86)\Opera\Opera.exe" Arguments="%1"/>
+    </apps>
+  </DefaultApplicationsSection>
+<startup><supportedRuntime version="v2.0.50727"/></startup></configuration>
+
+
+
