@@ -1,24 +1,36 @@
 ==============
 1. DESCRIPTION
 ==============
-This program setup us default protocol handler in registry (HKEY_CLASSES_ROOT\http\shell\open\command\@ = ""C:\code\urlHandler\urlHandler\bin\Debug\urlHandler.exe" "%1"")
+Open url in sprcified browser based on rules (protocol, regular expression, process name* matches) defined in config file
 
-When user click on ulr (http://test.ru) in some application (Outlook, Skype, Word etc.), urlHandler launchs insted of default browser. It check all rule specified in config file and launch matched application. If no matched rule found it launch default application(specified in config).
+*Works only in Windows.
+
+When user click on ulr (http://test.ru) in some application (Outlook, Skype, Libre Office  etc.), urlHandler launchs insted of default browser. It check all rules defined in config file and launch matched application (Opera, Chrome, etc...). If no matched rule found it launch default application for url protocol (defined in config).
 
 ===============
 2. INSTALLATION
 ===============
 
-If you want handle some protocols you shoud change default handler in registry.
+If you want handle some protocols you shoud change default application for this protocol.
 
 --------------
 2.1 Windows XP
 --------------
 
-Run regedit.exe and go to HKEY_CLASSES_ROOT\http\shell\open\command and change default value to "C:\code\urlHandler\urlHandler\bin\Debug\urlHandler.exe" "%1"
+Run regedit.exe and go to HKEY_CLASSES_ROOT\http\shell\open\command and change default value to "<path_to_exe>\urlHandler.exe" "%1"
 
-Now when you click on link (http://test.ua) in Skype urlHandler launchs insted of your default browser.
+Now when you click on link (http://test.ua) in Skype urlHandler launchs insted of your default browser, compare url to specified rule and launch specified application.
 
-If you want manage https protocol links to you shoud change default value in HKEY_CLASSES_ROOT\https\shell\open\command key
+If you want manage https protocol links to, you should change default value in HKEY_CLASSES_ROOT\https\shell\open\command key
 
+--------------
+2.2 Windows 7
+--------------
 
+Windows 7 stores protocol handling settings in another way. You can look at research\addProgid.reg and research\assotiation.reg to chenge win 7 default protocol handler.
+
+-----------------
+2.2 Kubuntu 12.10
+-----------------
+
+Go to System Settings -> Default Applications -> Web Browser and set path to urlHandler.
