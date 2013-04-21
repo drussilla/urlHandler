@@ -2,7 +2,8 @@
 using System.Configuration;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
-using urlHandler.Configuration;
+using urlHandler.Common.Configuration;
+using urlHandler.Common.Model;
 
 namespace urlHandler
 {
@@ -10,7 +11,7 @@ namespace urlHandler
     {
         public static bool CheckUrl(string plainUrl)
         {
-            Url url = new Url(plainUrl);
+            var url = new Url(plainUrl);
 
             if (CheckRules(url))
             {

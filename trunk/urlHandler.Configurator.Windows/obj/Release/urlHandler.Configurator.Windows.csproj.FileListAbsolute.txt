@@ -1,0 +1,15 @@
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\bin\Release\urlHandler.Configurator.exe.config
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\urlHandler.Configurator.Windows.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\MainWindow.baml
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\MainWindow.g.cs
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\App.g.cs
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\urlHandler.Configurator_MarkupCompile.cache
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\urlHandler.Configurator.g.resources
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\urlHandler.Configurator.Windows.Properties.Resources.resources
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\urlHandler.Configurator.Windows.csproj.GenerateResource.Cache
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\bin\Release\urlHandler.Configurator.exe
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\bin\Release\urlHandler.Configurator.pdb
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\bin\Release\urlHandler.Common.dll
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\bin\Release\Xceed.Wpf.Toolkit.dll
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\urlHandler.Configurator.exe
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler.Configurator.Windows\obj\Release\urlHandler.Configurator.pdb

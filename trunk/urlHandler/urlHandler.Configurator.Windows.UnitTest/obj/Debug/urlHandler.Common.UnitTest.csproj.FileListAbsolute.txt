@@ -1,0 +1,7 @@
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler\urlHandler.Configurator.Windows.UnitTest\bin\Debug\urlHandler.Common.UnitTest.dll
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler\urlHandler.Configurator.Windows.UnitTest\bin\Debug\urlHandler.Common.UnitTest.pdb
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler\urlHandler.Configurator.Windows.UnitTest\bin\Debug\urlHandler.Common.dll
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler\urlHandler.Configurator.Windows.UnitTest\bin\Debug\urlHandler.Common.pdb
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler\urlHandler.Configurator.Windows.UnitTest\obj\Debug\urlHandler.Common.UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler\urlHandler.Configurator.Windows.UnitTest\obj\Debug\urlHandler.Common.UnitTest.dll
+C:\Users\Ivan\Documents\GitHub\urlHandler\trunk\urlHandler\urlHandler.Configurator.Windows.UnitTest\obj\Debug\urlHandler.Common.UnitTest.pdb

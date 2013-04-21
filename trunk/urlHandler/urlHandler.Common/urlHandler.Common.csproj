@@ -54,10 +54,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Configuration\DefaultApplicationCollection.cs" />
+    <Compile Include="Configuration\DefaultApplicationElement.cs" />
+    <Compile Include="Configuration\DefaultApplicationsSection.cs" />
+    <Compile Include="Configuration\RuleCollection.cs" />
+    <Compile Include="Configuration\RuleElement.cs" />
+    <Compile Include="Configuration\RulesSection.cs" />
+    <Compile Include="DynamicProcessName.cs" />
     <Compile Include="Interfaces\IProcessName.cs" />
+    <Compile Include="Model\Url.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
